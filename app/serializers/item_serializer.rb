@@ -1,9 +1,7 @@
 class ItemSerializer < ActiveModel::Serializer
-  attributes :id, :detail
+  attributes :id, :description
 
-  belongs_to :list
-
-  def detail
-    object.detail
+  def description
+    object.description
   end
 end

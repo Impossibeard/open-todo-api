@@ -1,14 +1,10 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :username, :email, :password
+  attributes :id, :username, :password
 
   has_many :lists
 
   def username
     object.username
-  end
-
-  def email
-    object.email
   end
 
   def password
